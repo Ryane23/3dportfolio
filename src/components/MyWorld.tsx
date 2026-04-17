@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { PlayCircle, SkipForward, SkipBack, Music2, Gamepad2, Dumbbell } from "lucide-react";
 
 export default function MyWorld() {
@@ -22,6 +23,12 @@ export default function MyWorld() {
         >
           <span className="text-[#C6FF00] tracking-[0.2em] font-bold text-sm uppercase mb-3 block">Personal</span>
           <h2 className="text-5xl md:text-7xl font-black text-white heading-font">My World</h2>
+          <Link
+            href="/my-world"
+            className="inline-block mt-8 px-8 py-3 rounded-full bg-[#C6FF00] text-black font-bold text-lg shadow-[0_0_20px_rgba(198,255,0,0.15)] hover:bg-white hover:text-black transition-colors"
+          >
+            Discover My World
+          </Link>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
