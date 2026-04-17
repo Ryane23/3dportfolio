@@ -128,7 +128,7 @@ export default function MyWorldPage() {
               </div>
             </div>
           </motion.div>
-          {/* FC Barcelona Card */}
+          {/* FC Barcelona Card with Animated Logo */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -139,8 +139,20 @@ export default function MyWorldPage() {
             <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
             <div className="relative z-10 flex flex-col h-full justify-between">
               <div className="flex justify-between items-start">
-                <div className="w-16 h-16 bg-white/10 rounded-full backdrop-blur-xl flex items-center justify-center border border-white/20">
-                  <span className="material-symbols-outlined text-white text-3xl">sports_soccer</span>
+                <div className="flex items-center gap-4">
+                  {/* Animated 3D FC Barcelona Logo */}
+                  <motion.img
+                    src="/barca.png"
+                    alt="FC Barcelona Logo"
+                    className="w-20 h-20 drop-shadow-2xl rounded-xl border-2 border-white/30 bg-white/10"
+                    style={{ boxShadow: "0 8px 32px 0 rgba(0,0,0,0.25)" }}
+                    initial={{ rotateY: 0, scale: 1 }}
+                    animate={{ rotateY: [0, 30, -30, 0], scale: [1, 1.1, 1.1, 1] }}
+                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                  />
+                  <div className="w-16 h-16 bg-white/10 rounded-full backdrop-blur-xl flex items-center justify-center border border-white/20">
+                    <span className="material-symbols-outlined text-white text-3xl">sports_soccer</span>
+                  </div>
                 </div>
                 <span className="text-[10px] text-white/60 uppercase tracking-[0.3em] font-black">Més que un club</span>
               </div>

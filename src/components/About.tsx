@@ -46,6 +46,12 @@ export default function About() {
             <p className="text-white/60 text-lg leading-relaxed">
               I am a Digital Engineer specializing in building full-stack applications with an emphasis on interactive, immersive user experiences and deeply integrated AI systems. My code isn't just functional; it's an experience.
             </p>
+            <a
+              href="/about"
+              className="inline-block mt-6 px-6 py-2 rounded-full bg-[#C6FF00] text-black font-bold shadow-lg hover:bg-[#b6e600] transition-colors text-base"
+            >
+              Learn more about us
+            </a>
           </motion.div>
 
           <motion.div
