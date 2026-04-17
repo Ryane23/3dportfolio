@@ -60,15 +60,21 @@ export default function Navigation() {
               </div>
             ))}
             <div className="w-[1px] h-6 bg-white/20 mx-2" />
-            <button className="px-6 py-2.5 rounded-full text-sm font-bold bg-[#C6FF00] text-black hover:bg-[#A3D900] transition-colors shadow-[0_0_15px_rgba(198,255,0,0.4)]">
+            <Link
+              href="/hire-me"
+              className="px-6 py-2.5 rounded-full text-sm font-bold bg-[#C6FF00] text-black hover:bg-[#A3D900] transition-colors shadow-[0_0_15px_rgba(198,255,0,0.4)]"
+            >
               Hire Me
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Hire Me Button */}
-          <button className="md:hidden px-6 py-2 rounded-full text-sm font-bold bg-[#C6FF00] text-black">
+          <Link
+            href="/hire-me"
+            className="md:hidden px-6 py-2 rounded-full text-sm font-bold bg-[#C6FF00] text-black"
+          >
             Hire Me
-          </button>
+          </Link>
         </div>
       </motion.nav>
 
