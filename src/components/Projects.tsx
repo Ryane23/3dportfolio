@@ -172,6 +172,15 @@ export default function Projects() {
           </div>
         </motion.div>
 
+        {/* Link to Projects Page */}
+        <div className="mt-20 flex justify-center">
+          <a
+            href="/projects"
+            className="px-8 py-3 rounded-full bg-[#C6FF00] text-black font-bold text-lg shadow-lg hover:bg-[#b6e600] transition-colors"
+          >
+            View All Projects
+          </a>
+        </div>
       </div>
     </section>
   );
