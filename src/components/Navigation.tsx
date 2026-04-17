@@ -3,15 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import SectionLink from "@/components/SectionLink";
 import { X, Menu } from "lucide-react";
 
 const NAV_ITEMS = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Articles", href: "#articles" },
-  { name: "My World", href: "#world" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Articles", href: "/#articles" },
+  { name: "My World", href: "/#world" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navigation() {
@@ -44,12 +45,12 @@ export default function Navigation() {
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <Link
+                <SectionLink
                   href={item.href}
                   className="px-5 py-2.5 text-sm font-medium text-white/70 hover:text-[#C6FF00] transition-colors relative z-10"
                 >
                   {item.name}
-                </Link>
+                </SectionLink>
                 {hoveredIndex === index && (
                   <motion.div
                     layoutId="nav-pill"
@@ -89,14 +90,14 @@ export default function Navigation() {
           >
             <div className="flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (
-                <Link
+                <SectionLink
                   key={item.name}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
                   className="text-2xl font-bold text-white hover:text-[#C6FF00] transition-colors"
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </SectionLink>
               ))}
             </div>
           </motion.div>

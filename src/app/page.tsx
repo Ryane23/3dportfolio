@@ -1,9 +1,24 @@
+"use client";
+import { useEffect } from "react";
 import Hero3D from "@/components/Hero3D";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import MyWorld from "@/components/MyWorld";
 
 export default function Home() {
+  useEffect(() => {
+    const section = window.localStorage.getItem("scrollToSection");
+    if (section) {
+      window.localStorage.removeItem("scrollToSection");
+      setTimeout(() => {
+        const el = document.getElementById(section);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Wait for DOM to be ready
+    }
+  }, []);
+
   return (
     <div className="relative">
       <main className="relative w-full h-screen overflow-hidden flex items-center justify-center">
