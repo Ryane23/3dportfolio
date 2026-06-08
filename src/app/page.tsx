@@ -27,11 +27,11 @@ export default function Home() {
 
         {/* Main Content Layout */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pointer-events-none pb-20 md:pb-0">
-          <div className="flex flex-col md:flex-row items-center justify-between w-full h-full gap-8 md:gap-0 mt-32 md:mt-0">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full h-full gap-8 md:gap-0 mt-24 md:mt-0">
             
             {/* Left Text */}
-            <div className="flex-1 flex flex-col justify-center items-center md:items-start select-none">
-              <span className="text-[#C6FF00] tracking-[0.3em] text-sm md:text-md uppercase font-bold mb-4 ml-1">
+            <div className="w-full md:w-1/3 flex flex-col justify-center items-center md:items-start select-none">
+              <span className="text-[#C6FF00] tracking-[0.3em] text-sm md:text-md uppercase font-bold mb-6 ml-1">
                 Ryan Erick
               </span>
               <h1 className="text-[12vw] md:text-[8vw] lg:text-[10vw] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-white/30 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] mix-blend-screen">
@@ -39,15 +39,18 @@ export default function Home() {
               </h1>
             </div>
 
-            {/* Center Space for 3D Avatar (Handles responsive spacing) */}
-            <div className="w-full h-[30vh] md:w-[35vw] md:h-auto shrink-0" />
+            {/* Center Space for 3D Avatar (Handles responsive spacing) - hidden on mobile */}  
+            <div className="hidden md:block w-[25vw] h-auto shrink-0" />
+            
+            {/* On mobile, the 3D object will be below the text */}
+            <div className="md:hidden w-full h-[20vh]" />
 
             {/* Right Text */}
-            <div className="flex-1 flex flex-col justify-center items-center md:items-end text-center md:text-right select-none">
+            <div className="w-full md:w-1/3 flex flex-col justify-center items-center md:items-end text-center md:text-right select-none">
               <h1 className="text-[12vw] md:text-[8vw] lg:text-[10vw] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-bl from-white to-white/30 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] mix-blend-screen">
                 ENGINEER
               </h1>
-              <p className="text-white/60 text-lg md:text-xl max-w-sm mt-6 font-light">
+              <p className="text-white/60 text-lg md:text-xl max-w-sm mt-8 font-light">
                 Full-stack developer & AI systems builder
               </p>
             </div>

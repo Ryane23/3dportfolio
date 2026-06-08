@@ -30,7 +30,7 @@ export default function AboutUsPage() {
   return (
     <main className="relative min-h-screen pt-32 pb-48 px-6 md:px-12 lg:px-24 bg-[#131313]">
       {/* Ambient Glows */}
-      <div className="fixed top-1/4 -left-20 w-[500px] h-[500px] bg-[#b7f569]/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="fixed top-1/4 -left-20 w-[500px] h-[500px] bg-[#C6FF00]/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="fixed bottom-1/4 -right-20 w-[400px] h-[400px] bg-[#2c33b5]/10 rounded-full blur-[100px] pointer-events-none" />
       {/* Grain Overlay */}
       <div className="grain-overlay fixed inset-0 pointer-events-none z-50 opacity-[0.03] mix-blend-overlay bg-[url('/noise.png')]" />
@@ -39,7 +39,7 @@ export default function AboutUsPage() {
         {/* Left: 3D Avatar/Portrait */}
         <div className="lg:col-span-5 sticky top-32">
           <div className="relative group">
-            <div className="absolute -inset-4 bg-[#b7f569]/20 blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition-opacity duration-700"></div>
+            <div className="absolute -inset-4 bg-[#C6FF00]/20 blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition-opacity duration-700"></div>
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden border-[0.5px] border-white/10 glass-panel">
               <img
                 alt="Ryan Erick Stylized Portrait"
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
               {/* Floating Identity Tag */}
               <div className="absolute bottom-8 left-8">
                 <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-white uppercase leading-none">
-                  Ryan <br /> <span className="text-[#b7f569] neon-glow">Erick</span>
+                  Ryan <br /> <span className="text-[#C6FF00] neon-glow">Erick</span>
                 </h2>
                 <p className="mt-4 font-label text-xs tracking-widest uppercase text-white/40">Architect of Digital Monoliths</p>
               </div>
@@ -61,11 +61,11 @@ export default function AboutUsPage() {
         <div className="lg:col-span-7 space-y-24">
           {/* Bio Section */}
           <section>
-            <div className="inline-block px-3 py-1 border border-[#b7f569]/30 rounded-full mb-6">
-              <span className="text-[10px] uppercase tracking-[0.2em] font-label text-[#b7f569]">Operational Profile</span>
+            <div className="inline-block px-3 py-1 border border-[#C6FF00]/30 rounded-full mb-6">
+              <span className="text-[10px] uppercase tracking-[0.2em] font-label text-[#C6FF00]">Operational Profile</span>
             </div>
             <h3 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter text-white mb-8 leading-[0.9]">
-              CRAFTING <span className="text-[#b7f569]">FUTURE</span> SYSTEMS.
+              CRAFTING <span className="text-[#C6FF00]">FUTURE</span> SYSTEMS.
             </h3>
             <p className="text-xl md:text-2xl font-light leading-relaxed text-white/70 max-w-2xl">
               A Computer Engineer specialized in the convergence of <span className="text-white font-medium italic">high-performance backend architecture</span> and immersive front-end interfaces. Building robust digital structures that bridge the gap between human intuition and machine logic.
@@ -76,38 +76,38 @@ export default function AboutUsPage() {
             <h4 className="font-headline text-sm tracking-[0.3em] uppercase text-white/40 mb-10">Technical Arsenal</h4>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {/* Skill Card 1 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">data_object</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">data_object</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">React / Next.js</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">Complex state & Server components</p>
               </div>
               {/* Skill Card 2 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">database</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">database</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">Laravel / Django</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">Scalable API Ecosystems</p>
               </div>
               {/* Skill Card 3 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">psychology</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">psychology</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">AI Engineering</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">LLMs & Neural Networks</p>
               </div>
               {/* Skill Card 4 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">view_in_ar</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">view_in_ar</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">Three.js / WebGL</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">Immersive 3D Environments</p>
               </div>
               {/* Skill Card 5 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">cloud</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">cloud</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">Cloud Arch</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">AWS & Serverless Logic</p>
               </div>
               {/* Skill Card 6 */}
-              <div className="glass-panel p-8 rounded-lg group hover:border-[#b7f569]/50 transition-all duration-500 hover:-translate-y-1">
-                <span className="material-symbols-outlined text-[#b7f569] mb-4 block">memory</span>
+              <div className="glass-panel p-8 rounded-lg group hover:border-[#C6FF00]/50 transition-all duration-500 hover:-translate-y-1">
+                <span className="material-symbols-outlined text-[#C6FF00] mb-4 block">memory</span>
                 <h5 className="text-white font-headline text-lg uppercase tracking-tighter">Rust / C++</h5>
                 <p className="text-xs text-white/40 mt-2 font-label">System-level optimization</p>
               </div>
@@ -119,8 +119,8 @@ export default function AboutUsPage() {
             <div className="relative pl-12 border-l border-white/5 space-y-16">
               {/* Education Node */}
               <div className="relative">
-                <div className="absolute -left-[54px] top-0 w-3 h-3 rounded-full bg-[#b7f569] shadow-[0_0_15px_rgba(193,255,114,0.8)]"></div>
-                <span className="text-[10px] font-label text-[#b7f569] uppercase tracking-widest mb-2 block">Foundations</span>
+                <div className="absolute -left-[54px] top-0 w-3 h-3 rounded-full bg-[#C6FF00] shadow-[0_0_15px_rgba(198,255,0,0.8)]"></div>
+                <span className="text-[10px] font-label text-[#C6FF00] uppercase tracking-widest mb-2 block">Foundations</span>
                 <h5 className="text-2xl font-headline text-white uppercase tracking-tighter">Academic Mastery</h5>
                 <div className="mt-4 space-y-2">
                   <div className="flex justify-between items-center glass-panel px-6 py-4 rounded">
@@ -146,16 +146,16 @@ export default function AboutUsPage() {
               </div>
               {/* Accomplishments Node */}
               <div className="relative">
-                <div className="absolute -left-[54px] top-0 w-3 h-3 rounded-full bg-[#b7f569] shadow-[0_0_15px_rgba(193,255,114,0.8)]"></div>
-                <span className="text-[10px] font-label text-[#b7f569] uppercase tracking-widest mb-2 block">Impact</span>
+                <div className="absolute -left-[54px] top-0 w-3 h-3 rounded-full bg-[#C6FF00] shadow-[0_0_15px_rgba(198,255,0,0.8)]"></div>
+                <span className="text-[10px] font-label text-[#C6FF00] uppercase tracking-widest mb-2 block">Impact</span>
                 <h5 className="text-2xl font-headline text-white uppercase tracking-tighter">Recognition</h5>
                 <div className="mt-4 space-y-6">
                   <div className="group">
-                    <p className="text-lg text-white font-headline uppercase leading-tight group-hover:text-[#b7f569] transition-colors">Top 1% Developer on StackOverflow</p>
+                    <p className="text-lg text-white font-headline uppercase leading-tight group-hover:text-[#C6FF00] transition-colors">Top 1% Developer on StackOverflow</p>
                     <p className="text-xs text-white/30 font-label mt-1">Global ranking for Node.js and Systems Design contributions.</p>
                   </div>
                   <div className="group">
-                    <p className="text-lg text-white font-headline uppercase leading-tight group-hover:text-[#b7f569] transition-colors">Open Source Contributor of the Year</p>
+                    <p className="text-lg text-white font-headline uppercase leading-tight group-hover:text-[#C6FF00] transition-colors">Open Source Contributor of the Year</p>
                     <p className="text-xs text-white/30 font-label mt-1">Recognized for core contributions to the Three.js ecosystem.</p>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function AboutUsPage() {
           </section>
           {/* CTA */}
           <div className="pt-12">
-            <button className="group relative px-12 py-5 bg-[#b7f569] rounded-full overflow-hidden transition-all hover:scale-105 active:scale-95">
+            <button className="group relative px-12 py-5 bg-[#C6FF00] rounded-full overflow-hidden transition-all hover:scale-105 active:scale-95">
               <span className="relative z-10 font-label font-bold text-[#304f00] tracking-tight uppercase text-sm">Initiate Collaboration</span>
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </button>
@@ -174,7 +174,7 @@ export default function AboutUsPage() {
       {/* Scroll Indicator */}
       <div className="fixed bottom-12 right-12 hidden lg:flex flex-col items-center gap-4 z-40">
         <span className="[writing-mode:vertical-lr] font-label text-[10px] tracking-[0.5em] text-white/20 uppercase">Scroll to explore</span>
-        <div className="w-px h-24 bg-gradient-to-b from-[#b7f569] to-transparent opacity-30"></div>
+        <div className="w-px h-24 bg-gradient-to-b from-[#C6FF00] to-transparent opacity-30"></div>
       </div>
     </main>
   );
